@@ -11,13 +11,47 @@ I w metodzie main stworz instancje klasy oraz sprawdz wszystkie metody na dowoln
 package MyNumber;
 
 public class MyNumber {
+
     private final int x;
 
     public MyNumber(int x) {
         this.x = x;
-        }
+    }
 
-    public boolean isOdd (double number){
-        if
+    public boolean isOdd(double number) {
+        if (number % 2 == 1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public boolean isEven(double number) {
+        if (number % 2 == 0) {
+            //if (number % 2 != 1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public double sqrt(double number) {
+        double x = Math.sqrt(number);
+        return x;
+    }
+
+    public double pow(double number) {
+        double result = Math.pow(number,x);
+        return result;
+    }
+
+    public double add(double number) {
+        double result = number + x;
+        return result;
+    }
+
+    public double subtract(double number) {
+        double result = number - x;
+        return result;
     }
 }

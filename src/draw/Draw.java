@@ -1,4 +1,4 @@
-package Draw;
+package draw;
 
 import java.util.Random;
 import java.util.Scanner;

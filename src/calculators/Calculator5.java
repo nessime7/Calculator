@@ -9,7 +9,7 @@ Wprowadź drugą liczbę
 Mogę wykonywać wiele kalulacji, czyli zapętlenie aż do momentu wciśnięcia exit przez użytkownika.
  */
 
-package Calculators;
+package calculators;
 
 import java.util.Scanner;
 
@@ -24,36 +24,37 @@ public class Calculator5 {
                     "+\n" +
                     "-\n" +
                     "*\n" +
-                    "/\n");
+                    "/\n" +
+                    "exit");
 
             String choice = scanner.next();
+            if (choice.equals("exit")) {
+                exit();
+            }
 
             System.out.println("Wprowadź drugą liczbę: ");
             int y = scanner.nextInt();
 
             switch (choice) {
-                case "+":
+                case "+" -> {
                     int result = add(x, y);
                     System.out.println(result);
-                    break;
-
-                case "-":
+                }
+                case "-" -> {
                     int result1 = subtract(x, y);
                     System.out.println(result1);
-                    break;
-
-                case "*":
+                }
+                case "*" -> {
                     int result2 = multiplication(x, y);
                     System.out.println(result2);
-                    break;
-
-                case "/":
+                }
+                case "/" -> {
                     int result3 = division(x, y);
                     System.out.println(result3);
-                    break;
+                }
+                case "exit" -> exit();
             }
         }
-
     }
 
     private static void exit() {

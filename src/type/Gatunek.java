@@ -16,7 +16,7 @@ wypisującą wszystkie dane
 klonującą obiekt – metoda powinna zwracać odnośnik do nowego obiektu typu Gatunek o wartościach pól takich samych jak w obiekcie, w którym została wywołana.
  */
 
-package Type;
+package type;
 
 public class Gatunek {
     String rodzaj;

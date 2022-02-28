@@ -9,9 +9,8 @@ Wybierz działanie:
 użyj pętli
  */
 
-package Calculators;
+package calculators;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Calculator1 {

@@ -9,7 +9,7 @@ Wprowadź drugą liczbę
 bez użycia pętli
  */
 
-package Calculators;
+package calculators;
 
 import java.util.Scanner;
 

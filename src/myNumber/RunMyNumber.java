@@ -1,4 +1,4 @@
-package MyNumber;
+package myNumber;
 
 public class RunMyNumber {
     public static void main(String[] args) {

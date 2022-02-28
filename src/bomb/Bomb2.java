@@ -1,6 +1,5 @@
-package Bomb;
+package bomb;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Bomb2 {

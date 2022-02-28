@@ -1,4 +1,4 @@
-package Type;
+package type;
 
 public class Gatunki {
     public static <Lista> void main(String[] args) {

@@ -3,7 +3,7 @@
  Napisz program w 3 wersjach przy użyciu różnych pętli.
 */
 
-package Bomb;
+package bomb;
 
 import java.util.Scanner;
 

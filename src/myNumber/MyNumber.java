@@ -8,7 +8,7 @@ Ok MyNumber subtract(MyNumber x) – zwraca różnicę atrybutu i x opakowaną w
 I w metodzie main stworz instancje klasy oraz sprawdz wszystkie metody na dowolnych danych
  */
 
-package MyNumber;
+package myNumber;
 
 public class MyNumber {
 

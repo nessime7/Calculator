@@ -6,60 +6,67 @@ Wybierz działanie:
 "*"
 "/"
 Wprowadź drugą liczbę
-Każde działanie ma być wykonane w osobnej metodzie z której ma zostać zwrócona wartość.
+Każda metoda zwraca wynik działania, który jest wypisywany w switchu.
  */
 
-package Calculators;
+package calculators;
 
 import java.util.Scanner;
 
-public class Calculator3 {
+public class Calculator4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Wprowadź pierwszą liczbę: ");
         int x = scanner.nextInt();
-        System.out.println("Jakie działanie chcesz wykonać?\n" +
+
+        System.out.println("Wyniki z działań: \n" +
                 "+\n" +
                 "-\n" +
                 "*\n" +
                 "/\n");
+
         String choice = scanner.next();
+
         System.out.println("Wprowadź drugą liczbę: ");
         int y = scanner.nextInt();
 
         switch (choice) {
             case "+":
-                dodawanie(x, y);
+                int result = add(x, y);
+                System.out.println(result);
                 break;
 
             case "-":
-                odejmowanie(x, y);
+                int result1 = substract(x, y);
+                System.out.println(result1);
                 break;
 
             case "*":
-                mnozenie(x, y);
+                int result2 = multiplication(x, y);
+                System.out.println(result2);
                 break;
 
             case "/":
-                dzielenie(x, y);
+                int result3 = division(x, y);
+                System.out.println(result3);
                 break;
-
         }
     }
 
-    public static void dodawanie(int x, int y) {
-        System.out.println(x + y);
+
+    static int add(int x, int y) {
+        return x + y;
     }
 
-    public static void odejmowanie(int x, int y) {
-        System.out.println(x - y);
+    static int substract(int x, int y) {
+        return x - y;
     }
 
-    public static void mnozenie(int x, int y) {
-        System.out.println(x * y);
+    static int multiplication(int x, int y) {
+        return x * y;
     }
 
-    public static void dzielenie(int x, int y) {
-        System.out.println(x / y);
+    static int division(int x, int y) {
+        return x / y;
     }
 }

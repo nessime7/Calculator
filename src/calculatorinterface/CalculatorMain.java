@@ -9,13 +9,15 @@ public class CalculatorMain {
         System.out.println("2 - Naukowy");
         Scanner scanner = new Scanner(System.in);
         int input = scanner.nextInt();
-
+        CalculatorService calc;
         if (input == 1) {
-            CalculatorInterface calc1 = new RegularCalculator();
+            calc = new CalculatorService(new RegularCalculator());
         } else if (input == 2) {
-            CalculatorInterface calc2 = new ScientificCalculator();
+            calc = new CalculatorService(new ScientificCalculator());
         } else {
             throw new IllegalArgumentException();
         }
+        System.out.println("Wybrales kalkulator " + (input == 1 ? "normalny" : "naukowy"));
+        calc.run();
     }
 }

@@ -3,7 +3,7 @@ package calculatorinterface;
 import java.util.Scanner;
 
 public class ScientificCalculator implements CalculatorInterface {
-
+    @Override
     public int subtract(int x, int y) {
         return x - y;
     }

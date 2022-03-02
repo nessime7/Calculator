@@ -39,7 +39,6 @@ public class CalculatorService {
         int x = scanner.nextInt();
 
 
-
         System.out.println("Działania: \n" +
                 "+\n" +
                 "-\n" +
@@ -50,8 +49,11 @@ public class CalculatorService {
 
         String choice = scanner.next();
 
-        System.out.println("Wprowadź drugą liczbę: ");
-        int y = scanner.nextInt();
+        int y = 0;
+        if (!(choice.equals("sqrt"))) {
+            System.out.println("Wprowadź drugą liczbę: ");
+            y = scanner.nextInt();
+        }
 
         switch (choice) {
             case "+":

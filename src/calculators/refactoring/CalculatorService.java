@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Scanner;
 
 public class CalculatorService {
-
     private final List<Calculation> calculations = new ArrayList<>();
     private final Scanner scanner = new Scanner(System.in);
     private final OperationService operationService = new OperationService();
@@ -15,7 +14,7 @@ public class CalculatorService {
             System.out.println("1. Calculator\n" +
                     "2. Exit\n" +
                     "3. Print\n");
-            int userChoice = scanner.nextInt();
+            int userChoice = Integer.valueOf(scanner.nextLine());
             consoleSwitch(userChoice);
         }
     }
@@ -28,7 +27,6 @@ public class CalculatorService {
             case 2:
                 exit();
                 break;
-
             case 3:
                 for (Calculation element : calculations) {
                     System.out.println(element);
@@ -39,16 +37,15 @@ public class CalculatorService {
 
     private void doCalculation() {
         System.out.println("Wprowadź pierwszą liczbę: ");
-        int firstNumber = scanner.nextInt();
+        int firstNumber = Integer.valueOf(scanner.nextLine());
         System.out.println("Wybierz operację: \n" +
                 "+\n" +
                 "-\n" +
                 "*\n" +
                 "/\n");
-
         String operation = scanner.nextLine();
         System.out.println("Wprowadź drugą liczbę: ");
-        int secondNumber = scanner.nextInt();
+        int secondNumber = Integer.valueOf(scanner.nextLine());
         int result = calculate(firstNumber, operation, secondNumber);
         calculations.add(new Calculation(firstNumber, operation, secondNumber, result));
     }

@@ -15,6 +15,6 @@ public class Calculation {
 
     @Override
     public String toString() {
-        return firstNumber + " " + operation + " " + +secondNumber + " " + result;
+        return firstNumber + " " + operation + " " + secondNumber + " " + result;
     }
 }

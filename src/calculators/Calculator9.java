@@ -10,7 +10,7 @@ np. 2+2=4
 2. wydruk listy
  */
 
-package calculatorzad;
+package calculators;
 
 import java.util.ArrayList;
 import java.util.Scanner;
